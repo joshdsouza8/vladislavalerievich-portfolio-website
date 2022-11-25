@@ -45,9 +45,7 @@ ENV PYTHONUNBUFFERED 1
 ENV DJANGO_SETTINGS_MODULE=portfolio.settings.prod
 
 # Port used by this container to serve HTTP.
-ARG PORT
-ENV PORT=$PORT
-EXPOSE $PORT
+EXPOSE 80
 
 RUN ["chmod", "+x", "/app/entrypoint.sh"]
 ENTRYPOINT ["/app/entrypoint.sh"]
