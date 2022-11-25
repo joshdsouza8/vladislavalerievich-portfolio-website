@@ -49,4 +49,4 @@ RUN ["chmod", "+x", "/app/entrypoint.sh"]
 ENTRYPOINT ["/app/entrypoint.sh"]
 
 # Port used by this container to serve HTTP.
-EXPOSE 80
+EXPOSE 2375
